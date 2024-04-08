@@ -18,10 +18,11 @@ local defenseAttribute = 10
 local vitalityAttribute = 9
 local speedAttribute = 10
 local inteligenceAttribute = 9
-
+local menaceAttribute = 2
+local cursedEnergy = 10
 -- barra de progresso
 local function getProgressBar(attribute)
-    local fullChar = "⬜"
+    local fullChar = "💠"
     local emptyChar = "⬛"
 
     local result = ""    
@@ -53,7 +54,15 @@ print("|     Defesa:       "  .. getProgressBar (defenseAttribute))
 print("|     Vitalidade:   " .. getProgressBar (vitalityAttribute))
 print("|     Velocidade:   " .. getProgressBar (speedAttribute))
 print("|     Inteligencia: " .. getProgressBar (inteligenceAttribute))
+print("|     Energia Amaldiçoada: " .. getProgressBar (cursedEnergy))
 print("|")
+print("|")
+print("| Poderes Explicados: Infinito: Um dos poderes hereditários do clã Gojo, ele possibilita ao usuário manipular o infinito como bem entender, como puxar, repelir, desacelerar e desintegrar.")
+print("| Seis Olhos: É uma técnica hereditária do clã Gojo, possibilita ao usuário compreender as coisas em níveis moleculares, capacitando-o a usar suas técnicas no melhor nível possível, é a mistura de poderes perfeita, ele vê tudo.")
+print("|")
+print("|")
+print("| Grau: 🔶Especial")
+print("| Nivel de ameaça a humanidade: " .. getProgressBar(menaceAttribute))
 print("|")
 print("|")
 print("|")
